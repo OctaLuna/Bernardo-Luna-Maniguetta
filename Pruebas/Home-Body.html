@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Body</title>
+    </head>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .Carrousel{
+            width: 100%;
+            /*Esto es para hacer scroll a el contenido*/
+            overflow: scroll;
+            padding: 5px;
+            /*Esto es para que todos los elementos que tiene se van a posicionar en la posicion del padre relativamente*/
+            position: relative;
+        }
+        .Carrousel-container{
+            /*Esto es para que todo nuestro contenido este en linea y no uno ensima del otro*/
+            white-space: nowrap;
+            margin: 70px 0px;
+            padding-bottom: 10px;
+        }
+        .Carrousel-item{
+            background-color: #3f37c9;
+            width: 200px;
+            height: 250px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-right: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 450ms all;
+            transform-origin: center left;
+            position: relative;
+        }
+        /*Esto es para que pase algo cuando el cursor esta ensima del carrousel*/
+        .Carrousel-item:hover~.Carrousel-item{
+            transform: translate3d(100px, 0, 0);
+        }
+        /*Esto es para que cuando estes ensima de un item los demas esten opacos*/
+        .Carrousel-container:hover .Carrousel-item{
+            opacity: 1;
+        }
+        /*Esto es para que cuando eses ensima de un item sea mas grande*/
+        .Carrousel-container:hover .Carrousel-item:hover{
+            transform: scale(1.5);
+            opacity: 1;
+        }
+        /*Contenido de un item*/
+        .Carrousel-item-img{
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .Carrousel-item-details{
+            background: linear-gradient(to top rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0x) 100%);
+            font-size: 10px;
+            opacity: 0;
+            transform: 450ms opacity;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+    <body>
+        <section class="Carrousel">
+            <div class="Carrousel-container">
+                <div class="Carrousel-item">
+                    <img class="Carrousel-item-img" src="https://images.pexels.com/photos/2859016/pexels-photo-2859016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Spiderman">
+                    <div class="Carrousel-item-details">
+                        div.Carrousel-item
+                        <img src="./Imagenes/play.png" alt="Play">
+                        <img src="./Imagenes/plus.png" alt="Plus">
+                        <p class="Carrousel-item-details-title">Spiderman</p>
+                        <p class="Carrousel-item-details-subtitle">2020 8+ 12min</p>
+                    </div>
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+                <div class="Carrousel-item">
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

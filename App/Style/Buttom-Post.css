@@ -1,0 +1,11 @@
+/*Buttom*/
+.Blogs-buttom{
+    border: 1px solid #000814;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700px;
+    cursor: pointer;
+}

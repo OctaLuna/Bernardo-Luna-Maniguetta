@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Header</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    header{
+        background-color: #273043;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Header-logo img{
+        margin-top: 6px;
+        margin-left: 5px;
+        width: 95px;
+        height: 90px;
+    }
+    .Header-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .Header-content ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .Header-content li{
+        display: inline;
+        margin-right: 10px;
+    }
+    .Header-content a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0px 30px;
+    }
+    .Header-content a:hover{
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <header class="Header">
+        <div class="Header-logo">
+            <img class="Header-logo" src="../Utilitarios/Logo-Store-Continuum.png" alt="Continuum-logo">
+        </div>
+        <div class="Header-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Store</a></li>
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="/">Contactanos</a></li>
+                <li><a href="/">¿Quienes somos?</a></li>
+            </ul>
+        </div>
+        <div class="Header-dark-white-mode">
+        </div>
+    </header>
+</body>
+</html>
