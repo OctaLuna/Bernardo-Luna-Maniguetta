@@ -10,6 +10,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 2fr;
+        margin-top: 30px;
     }
     .Blogs-news-img-container{
         grid-column: 1;
