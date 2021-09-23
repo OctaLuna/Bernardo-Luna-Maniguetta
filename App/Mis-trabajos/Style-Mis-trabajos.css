@@ -4,16 +4,20 @@
     }
     .Blogs-news-container{
         background-color: #FFDD32;
-        padding: 0 50px 40px;
+        padding: 30px 50px 40px;
     }
     .Blogs-main-new{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr;
-        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 90%;
     }
     .Blogs-news-img-container{
         grid-column: 1;
+        margin-right: 100px;
     }
     .Blogs-news-img-container img{
         width: 800px;
